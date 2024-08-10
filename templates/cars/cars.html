@@ -5,7 +5,7 @@
 
 {% load humanize %}
 <!-- Sub banner start -->
-<!-- Log on to codeastro.com for more projects -->
+
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
         <div class="breadcrumb-areas">
@@ -34,7 +34,7 @@
                                 <a href="{% url 'car_detail' car.id %}" class="car-img">
                                     <div class="tag">For Sale</div>
                                     <div class="price-box">
-                                        <span>$ {{car.price | intcomma }}</span>
+                                        <span>Kes {{car.price | intcomma }}</span>
                                     </div>
                                     <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car"  style="min-height: 262px; max-height: 262px;">
                                 </a>
@@ -71,19 +71,19 @@
                                     </div>
                                 </div>
                             </div>
-							<!-- Log on to codeastro.com for more projects -->
+							
                             <div class="detail">
                                 <h1 class="title">
                                     <a href="{% url 'car_detail' car.id %}">{{car.car_title}}</a>
                                 </h1>
                                 <div class="location">
                                     <a href="{% url 'car_detail' car.id %}">
-                                        <i class="flaticon-pin"></i>{{car.state}}, {{car.city}}
+                                        <i class="flaticon-pin"></i>{{car.city}}
                                     </a>
                                 </div>
                                 <ul class="facilities-list clearfix">
                                     <li>{{car.fuel_type}}</li>
-                                    <li>{{car.miles | intcomma }} miles</li>
+                                    <li>{{car.milage | intcomma }} kms</li>
                                     <li>{{car.transmission}}</li>
                                     <li>{{car.body_style}}</li>
                                     <li>{{car.color}}</li>
@@ -135,7 +135,7 @@
                     </nav>
                 </div>
             </div>
-			<!-- Log on to codeastro.com for more projects -->
+			
             <div class="col-lg-4 col-md-12">
                 <div class="sidebar-right">
                     <!-- Advanced search start -->
@@ -180,7 +180,7 @@
                             </div>
                             <div class="range-slider clearfix">
                                             <label>Price</label>
-                                            <div data-min="0" data-max="150000"  data-min-name="min_price" data-max-name="max_price" data-unit="USD" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                                            <div data-min="0" data-max="200000000"  data-min-name="min_price" data-max-name="max_price" data-unit="KES" class="range-slider-ui ui-slider" aria-disabled="false"></div>
                                             <div class="clearfix"></div>
                                         </div>
                             <div class="form-group">
@@ -196,14 +196,14 @@
                         <h5 class="sidebar-title">Follow Us On:</h5>
                         <div class="social-list clearfix">
                             <ul>
-                                <li><a href="https://codeastro.com/" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="https://codeastro.com/" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://codeastro.com/" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="https://codeastro.com/" class="rss-bg"><i class="fa fa-rss"></i></a></li>
-                                <li><a href="https://codeastro.com/" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#" class="google-bg"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#" class="rss-bg"><i class="fa fa-rss"></i></a></li>
+                                <li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
-						<!-- Log on to codeastro.com for more projects -->
+						
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@
 {% load humanize %}
 {% load static %}
 <!-- Banner start -->
-<!-- Log on to codeastro.com for more projects -->
+
 <div class="banner" id="banner">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner banner-slider-inner text-center">
@@ -54,7 +54,7 @@
                         {% endfor %}
                     </select>
                 </div>
-				<!-- Log on to codeastro.com for more projects -->
+				
                 <div class="form-group">
                     <select class="form-control search-fields" name="city">
                         <option selected="true" disabled="disabled">Location</option>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="range-slider clearfix">
                                 <label>Price</label>
-                                <div data-min="0" data-max="150000"  data-min-name="min_price" data-max-name="max_price" data-unit="USD" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                                <div data-min="0" data-max="200000000"  data-min-name="min_price" data-max-name="max_price" data-unit="KES" class="range-slider-ui ui-slider" aria-disabled="false"></div>
                                 <div class="clearfix"></div>
                             </div>
                 <div class="form-group">
@@ -102,7 +102,7 @@
                 <i class="fa fa-angle-right"></i>
             </span>
         </a>
-		<!-- Log on to codeastro.com for more projects -->
+		
     </div>
 </div>
 <!-- Banner end -->
@@ -127,7 +127,7 @@
                             <a href="{% url 'car_detail' car.id %}" class="car-img">
                                 <div class="tag-2">Featured</div>
                                 <div class="price-box">
-                                    <span>${{car.price | intcomma}}</span>
+                                    <span>KES {{car.price | intcomma}}</span>
                                 </div>
                                 <img class="d-block w-100" src="{{car.car_photo.url}}" alt="car" style="min-height: 262px; max-height: 262px;">
                             </a>
@@ -164,14 +164,14 @@
                                 </div>
                             </div>
                         </div>
-						<!-- Log on to codeastro.com for more projects -->
+						
                         <div class="detail">
                             <h1 class="title">
                                 <a href="{% url 'car_detail' car.id %}">{{ car.car_title }}</a>
                             </h1>
                             <div class="location">
                                 <a href="{% url 'car_detail' car.id %}">
-                                    <i class="flaticon-pin"></i>{{car.state}}, {{car.city}}
+                                    <i class="flaticon-pin"></i> {{car.city}}
                                 </a>
                             </div>
                             <ul class="facilities-list clearfix">
@@ -220,7 +220,7 @@
                             <div class="facilities-list clearfix">
                                 <ul>
                                     <li>
-                                        <span><i class="flaticon-way"></i></span>{{car.miles | intcomma}} mi
+                                        <span><i class="flaticon-way"></i></span>{{car.milage | intcomma}} Kms
                                     </li>
                                     <li>
                                         <span><i class="flaticon-calendar-1"></i></span>{{car.year}}
@@ -231,7 +231,7 @@
                                 </ul>
                             </div>
                         </a>
-						<!-- Log on to codeastro.com for more projects -->
+						
                         <div class="carbox-overlap-wrapper">
                             <div class="overlap-box">
                                 <div class="overlap-btns-area">
@@ -271,7 +271,7 @@
                         </h1>
                         <div class="location">
                             <a href="{% url 'car_detail' car.id %}">
-                                <i class="flaticon-pin"></i>{{car.state}}, {{car.city}}
+                                <i class="flaticon-pin"></i> {{car.city}}
                             </a>
                         </div>
                     </div>
@@ -280,12 +280,12 @@
                             <p class="cartype">{{car.body_style}}</p>
                         </div>
                         <div class="pull-right">
-                            <p class="price">$ {{car.price | intcomma}}</p>
+                            <p class="price">KES {{car.price | intcomma}}</p>
                         </div>
                     </div>
                 </div>
             </div>
-			<!-- Log on to codeastro.com for more projects -->
+			
           {% endfor %}
 
         </div>
@@ -346,7 +346,7 @@
         </div>
     </div>
 </div>
-<!-- Log on to codeastro.com for more projects -->
+
 <!-- Intro section end -->
 
 
