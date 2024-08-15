@@ -186,7 +186,7 @@
                                 <span><b>Interior:</b> </span>{{single_car.interior}}
                             </li>
                             <li>
-                                <span><b>Miles:</b> </span>{{single_car.milage | intcomma}} miles
+                                <span><b>Miles:</b> </span>{{single_car.milage | intcomma}} kms
                             </li>
                             <li>
                                 <span><b>Doors:</b> </span>{{single_car.doors}}
@@ -197,9 +197,6 @@
 
                             <li>
                                 <span><b>Fuel Type:</b> </span>{{single_car.fuel_type}}
-                            </li>
-                            <li>
-                                <span><b>Owners:</b> </span>{{single_car.no_of_owners}}
                             </li>
                         </ul>
                     </div>
@@ -260,9 +257,6 @@
                                   <div class="row">
                                     <div class="col">
                                       <input type="text" name="city" class="form-control" placeholder="City" required>
-                                    </div>
-                                    <div class="col">
-                                      <input type="text" name="state" class="form-control" placeholder="State" required>
                                     </div>
                                   </div>
                                 </div>
