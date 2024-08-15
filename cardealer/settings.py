@@ -171,3 +171,7 @@ SITE_ID = 1
 
 # Whitenoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+# Heroku settings
+import django_heroku
+django_heroku.settings(locals())
